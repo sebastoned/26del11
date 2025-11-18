@@ -6,38 +6,37 @@
     <title>League of Legends</title>
 </head>
 <body>
-	<header>
-        <h1>League of Legends</h1>
-        <p>Sean todos bienvenidos al manual de League of Legends hecha por la<br>
+<header>
+    <h1>League of Legends</h1>
+    <p>Sean todos bienvenidos al manual de League of Legends hecha por la<br>
         famosa y prestigiosa revista <strong><a href="#thesebastones">"The Sebastones"</a></strong>.</p>
 
-        <h2>¿Qué es League of Legends?</h2>
-        <p>El League of Legends(LoL) es el papá de los MOBAs. Es un juego estratégico donde dos
-        equipos de 5 jugadores se chancan por destruir el Nexo enemigo en un mapa llamado La Grieta
-        del Invocador. Cada jugador elige un "campeón" con poderes únicos y debe farmear oro y
-        experiencia para poder matar al rival y así tomar Objetivos. El LoL cada año que pasa la rompe
-        y tiene millones de fans alrededor del mundo porque engancha con el trabajo en equipo,
-        las miles de estrategías y sus actualizaciones frecuentes, esta ultima siendo el motivo por el
-        cual este juego lleva manteniendose en la cima por más de una decada.</p>
+    <h2>¿Qué es League of Legends?</h2>
+    <p>El League of Legends(LoL) es el papá de los MOBAs. Es un juego estratégico donde dos
+    equipos de 5 jugadores se destrozan por destruir el Nexo enemigo en un mapa llamado La Grieta
+    del Invocador. Cada jugador elige un "campeón" con poderes únicos y debe farmear oro y
+    experiencia para poder matar al rival y así tomar Objetivos. El LoL cada año que pasa la rompe
+    y tiene millones de fans alrededor del mundo porque engancha con el trabajo en equipo,
+    las miles de estrategías y sus actualizaciones frecuentes, esta ultima siendo el motivo por el
+    cual este juego lleva manteniendose en la cima por más de una decada.</p>
         <center>
-            <img src="img/lol.jpg" alt="League of Legends" width="900">
-            <p>Este pie de foto también está en el centro de la página.</p>
+            <img src="img/lol.jpg" alt="League of Legends" width="800">
         </center>
-
-        <img src="img/2013.jpg" align="right" alt="League of Legends">
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="roles.html">Sobre nosotros</a></li>
-                <li><a href="worlds.html">Contacto</a></li>
-            </ul>  
-        </nav>
-        <nav>
-            <a href="#inicio">Inicio</a> |
-            <a href="#acerca-de">Acerca de</a> |
-            <a href="#contacto">Contacto</a>
-        </nav>
-        </header>
+    </header>
+    <hr>
+    <table align="center" border="1">
+    <caption>Selecciona tu camino, plebeyo</caption>
+    <tbody>
+        <tr>
+        <td><a href="draven.html"><img src="img/draven.gif" alt="Draven" width="400" height="350">
+            <center><h3>Draven</h2></center></a></td>
+        <td><a href="worlds.html"><img src="img/worlds.gif" alt="Worlds" width="400" height="350">
+            <center><h3>Worlds</h2></center></a></td>
+        <td><a href="roles.html"><img src="img/roles.jpg" alt="Roles" width="400" height="350">
+            <center><h3>Roles</h2></center></a></td>
+        </tr>
+        </tbody>
+    </table>
         <center>
             <img src="img/2013.jpg" alt="Un logo" width="250">
             <p>Este pie de foto también está en el centro de la página.</p>
@@ -49,5 +48,72 @@
         2025 por Sebastián García y su alterego sebastoned. Esta revista se interesa<br>
         más que nada en la cultura popular, está enfocada hacia un publico joven<br>
         interesados en música, videojuegos, cine e historia.</p>
+<!-- Formulario SUSCRIPCIÓN 100 % HTML puro -->
+<section>
+    <h2>SUSCRÍBETE A THE SEBASTONES MAGAZINE</h2>
+    <p>La revista más pituca y manyada del Perú que ahora solo habla de League of Legends. Si no te suscribes eres feeder, pe’.</p>
+
+    <form action="#" method="post">
+        <p>
+            <label for="nombre">Nombre completo (el del DNI, no tu nick de silver):</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellidos" required>
+        </p>
+
+        <p>
+            <label for="correo">Correo (el bueno, no el institucional):</label><br>
+            <input type="email" id="correo" name="correo" placeholder="ejemplo@gmail.com" required>
+        </p>
+
+        <p>
+            <strong>Rol de caballero:</strong><br>
+            <input type="radio" id="top" name="rol" value="top">
+            <label for="top">Top (rota al min 30)</label><br>
+
+            <input type="radio" id="jg" name="rol" value="jg">
+            <label for="jg">Jungla (el que nunca gankea)</label><br>
+
+            <input type="radio" id="mid" name="rol" value="mid">
+            <label for="mid">Mid (se cree Faker)</label><br>
+
+            <input type="radio" id="adc" name="rol" value="adc">
+            <label for="adc">ADC (Draven main, obvio)</label><br>
+
+            <input type="radio" id="supp" name="rol" value="supp">
+            <label for="supp">Support (sufre en silencio)</label>
+        </p>
+
+        <p>
+            <strong>¿Qué quieres que te enviemos?:</strong><br>
+            <input type="checkbox" id="draven" name="intereses" value="draven">
+            <label for="draven">Toda novedad sobre Draven</label><br>
+
+            <input type="checkbox" id="memes" name="intereses" value="skins">
+            <label for="memes">Cuando y cuanto estarán los nuevos packs de skins </label><br>
+
+            <input type="checkbox" id="worlds" name="intereses" value="worlds">
+            <label for="worlds">Cobertura de los Worlds</label><br>
+
+            <input type="checkbox" id="runas" name="intereses" value="runas">
+            <label for="runas">Builds secretas coreanas</label><br>
+
+            <input type="checkbox" id="entrevistas" name="intereses" value="entrevistas">
+            <label for="entrevistas">Entrevistas a Tyler1</label>
+        </p>
+        <label for="cajaDeTexto">Escríbenos:</label><br>
+        <textarea id="cajaDeTexto" name="mensaje" rows="4" cols="50">
+        </textarea>
+        <p>
+            <input type="submit" value="Suscríbeme">
+        </p>
+    </form>
+    <p>
+        <small>Tranquilo, no spameamos. Solo oro como los stacks de Adoration.</small>
+    </p>
+</section>
+</main>
+<footer>
+<p>© 2025 The Sebastones | League of Legends | Hecho con HTML puro y duro, Medac, Fuenlabrada.</p>
+</footer>
+        
 </body>
 </html>
